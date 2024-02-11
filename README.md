@@ -1,3 +1,3 @@
-# Guias de Alan
+# Alan's Guides
 
-Este repositorio contiene guias con variedad de temas que he aprendido a lo largo de mis estudios.
+This repo, contains info that i learned trough the years, feel free to open a pull request and add something!

@@ -40,6 +40,10 @@ network:
 ssh-keygen -t rsa -b 4096 -C "example@email.com"
 ```
 
+```bash
+ssh-keygen -t rsa-sha2-256 -b 2048
+```
+
 ## Generate a random base64 string
 
 ```bash

@@ -1,10 +1,8 @@
 # Install Neovim
 
 ```bash
-curl -Lo neovim.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo tar xzvf neovim.tar.gz -C /opt/
-sudo ln -s /opt/nvim-linux64/bin/nvim /usr/local/bin/nvim
-source ~/.bashrc
+curl -L "https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz" | sudo tar xzf - -C /opt/
+sudo ln -sf /opt/nvim-linux64/bin/nvim /usr/local/bin/nvim
 ```
 
 # Install LazyGit
@@ -16,15 +14,6 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 ```
 
-# Install Edge
-
-```bash
-sudo apt install software-properties-common apt-transport-https ca-certificates curl -y
-curl -fSsL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
-echo 'deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main' | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
-sudo apt update && sudo apt install microsoft-edge-stable
-```
-
 # Install eza
 
 ```bash
@@ -32,8 +21,7 @@ sudo mkdir -p /etc/apt/keyrings
 wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
 echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
 sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
-sudo apt update
-sudo apt install -y eza
+sudo apt update && sudo apt install -y eza
 ```
 
 # Change default audio output

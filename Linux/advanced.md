@@ -37,11 +37,7 @@ network:
 ## Generate a private and public SSH key
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "example@email.com"
-```
-
-```bash
-ssh-keygen -t rsa-sha2-256 -b 2048
+ssh-keygen -t ed25519 -C "email@example.com"
 ```
 
 ## Generate a random base64 string

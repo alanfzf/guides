@@ -1,6 +1,29 @@
+# Generation commands
+
+## Generate a private and public SSH key
+
+```bash
+ssh-keygen -t ed25519 -C "example@gmail.com"
+```
+
+## Generate a random base64 string
+
+```bash
+cat /dev/urandom | head -c 64 | base64
+```
+
+# Misc commands
+
+```bash
+# Get free disk space
+df -h
+# Get RAM info
+free -h
+```
+
 # Network commands
 
-## Connect to WiFi network
+## Connect to WiFi network using nmcli
 
 ```bash
 nmcli device wifi list
@@ -30,27 +53,4 @@ network:
         - to: default
           via: 192.168.1.1
   version: 2
-```
-
-# Generation commands
-
-## Generate a private and public SSH key
-
-```bash
-ssh-keygen -t ed25519 -C "email@example.com"
-```
-
-## Generate a random base64 string
-
-```bash
-cat /dev/urandom | head -c 64 | base64
-```
-
-# Misc commands
-
-```bash
-# Get free space
-df -h
-# Get RAM info
-free -h
 ```

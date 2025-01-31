@@ -1,7 +1,7 @@
 ## General
 ```bash
 # See all changed files
-git status 
+git status
 ```
 
 ## Branch commands
@@ -17,7 +17,7 @@ git checkout branch-name
 
 ## Merge commands
 ```bash
-# Merge 
+# Merge
 # you need to go to master branch, and pull the changes
 git checkout master
 git pull origin master
@@ -48,6 +48,6 @@ git pull origin master
 ```
 
 ```bash
-# return to old commit 
+# return to old commit
 git push -f origin $old_commit_id:master
 ```
